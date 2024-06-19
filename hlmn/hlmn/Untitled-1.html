@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Page</h1>
+        <a href="logout.php">Logout</a>
+    </header>
+    <main>
+        <h2>Data Pasien</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama:</th>
+                <tr></tr>
+                    <th>Alamat:</th>
+                <tr>
+                    <th>Nama Penyakit:</th>
+                <tr>
+                    <th>Ruang:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nama Pasien 1:</td>
+                <tr>
+                    <td>Alamat Pasien 1:</td>
+                <tr>
+                    <td>Nama Penyakit 1:</td>
+                <tr>
+                    <td>Ruang 1:</td>
+                </tr>
+                <!-- Tambahkan baris data pasien lainnya di sini -->
+            </tbody>
+        </table>
+        <h2>Komplain</h2>
+        <form action="submit_complain.php" method="post">
+            <label for="complain">Komplain:</label>
+            <textarea name="complain" id="complain" cols="30" rows="10"></textarea>
+            <br>
+            <label for="WEBP file">Unggah Gambar</label>
+            <input type="file" name="WEBP file" id="WEBP file" accept="WEBP file/*">
+            <br>
+            <button type="submit">Kirim Komplain</button>
+        </form>
+    </main>
+</body>
+</html>
